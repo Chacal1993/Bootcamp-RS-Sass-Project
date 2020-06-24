@@ -1,0 +1,13 @@
+@mixin par($border, $border-radius, $padding, $width) {
+    border: #{$border}em solid blue;
+    border-radius: #{$border-radius}px;
+    padding: #{$padding}em;
+    @if $padding == 0.3 {
+        background-color: pink;
+    } @else if $padding == 0.6 {
+        background-color: palevioletred;
+    } @else {
+        background-color: purple;
+    }
+    width: $width * 1%;
+}
